@@ -25,6 +25,10 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.automatewithrox.com'),
+  verification: {
+    google: 'XU-L5tqEgFEqixEs30dqf9Cc1xzITtTBkaAGpqLO3T8',
+  },
   title: 'Roxli Cahayag | Automation Specialist & AI Workflow Architect',
   description:
     'Results-driven Automation Specialist and AI Workflow Architect. Expert in Zapier, Make, n8n, and GoHighLevel automation systems. Helping businesses reduce manual work by up to 60% through custom AI-powered workflow solutions.',
