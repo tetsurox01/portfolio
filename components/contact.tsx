@@ -62,7 +62,7 @@ export function Contact() {
               {"Let's Build Something Together"}
             </h2>
             <p className="mt-4 max-w-md text-pretty leading-relaxed text-muted-foreground">
-              {"Have a project in mind or want to automate your business processes? I'd love to hear from you. Let's discuss how I can help streamline your operations."}
+              {"Have a project in mind or want to automate your business processes? Book a free discovery call and let's discuss how I can help streamline your operations."}
             </p>
 
             <div className="mt-8 space-y-4">
@@ -95,70 +95,41 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Right — contact form */}
-          <div data-animate className="opacity-0 translate-y-6 card-glow rounded-2xl border border-border bg-card p-8">
-            <h3 className="mb-6 text-lg font-semibold text-foreground">
-              Send a Message
-            </h3>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col gap-5"
-            >
-              <div>
-                <label
-                  htmlFor="name"
-                  className="mb-1.5 block text-sm text-muted-foreground"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          {/* Right — Cal.com Booking */}
+          <div data-animate className="opacity-0 translate-y-6 card-glow rounded-2xl border border-border bg-card overflow-hidden">
+            <div className="p-6 pb-2">
+              <h3 className="text-lg font-semibold text-foreground">
+                Book a Discovery Call
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Pick a time that works for you — free 30-minute consultation.
+              </p>
+            </div>
+            <div className="px-4 pb-4">
+              <div className="w-full rounded-xl overflow-hidden">
+                <iframe
+                  src="https://cal.com/automate-with-rox?embed=true&theme=dark&hideEventTypeDetails=false"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  loading="lazy"
+                  className="rounded-xl"
+                  style={{ minHeight: "600px", border: "none" }}
+                  title="Book a discovery call with Roxli"
                 />
               </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="mb-1.5 block text-sm text-muted-foreground"
+              <p className="mt-3 text-xs text-muted-foreground text-center">
+                Powered by{" "}
+                <a
+                  href="https://cal.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
                 >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="mb-1.5 block text-sm text-muted-foreground"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  placeholder="Tell me about your project..."
-                  className="w-full resize-none rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="btn-ripple rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 active:scale-95"
-              >
-                Send Message
-              </button>
-            </form>
+                  Cal.com
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
